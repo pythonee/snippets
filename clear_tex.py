@@ -1,4 +1,4 @@
-import os,sys
+import os
 
 from itertools import chain
 
@@ -20,6 +20,6 @@ for root,dirs,files in chain.from_iterable(os.walk(path) for path in paths):
             print filename,ext
             try:
                 os.remove(pathtofile)
-            except IOError:
+            except OSError:
                 print 'error'
 
