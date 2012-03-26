@@ -1,11 +1,5 @@
 # -*- coding:utf-8 -*-
-'''
-Created on 2012-2-21
-我的博客：www.shahuwang.com
-我的邮箱:shahuwang@qq.com
-@author: 王瑞期
-'''
-#person = range(24)
+
 def josephus( n, s , m ):
     #直接用数字表示人会更节省空间，然后通过这些数字来
     #获取真正存放人的列表的数据进行排序，在人很多的时候，

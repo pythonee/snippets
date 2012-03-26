@@ -27,7 +27,7 @@ def selectsort(data):
         min = i
         for j in range(i+1, len(data)):
             if data[j] < data[min]:
-                min = j 
+                min = j
         data[i],data[min] = data[min],data[i]
 
 
@@ -50,7 +50,7 @@ def heap_sort(data):
     for n in range(len(data) - 1, 1, -1):
         heap_adjust(data, 1, n)
         data[0], data[n - 1] = data[n - 1], data[0]
-    
+
 def sort_perfmorn(sortfunc, data):
     sort_data = copy.deepcopy(data)
     t1 = datetime.datetime.now()
@@ -65,4 +65,4 @@ sort_perfmorn(quicksort,data)
 sort_perfmorn(selectsort,data)
 sort_perfmorn(heap_sort,data)
 
-                
+

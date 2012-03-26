@@ -1,10 +1,5 @@
 # -*- coding:utf-8 -*-
-'''
-Created on 2012-2-21
-我的博客：www.shahuwang.com
-我的邮箱:shahuwang @qq.com
-@author: 王瑞期
-'''
+
 import time
 def hanoi( n, a, b, c ):
     if n == 1:
