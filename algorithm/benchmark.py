@@ -1,7 +1,7 @@
 import time
 
-def rt(func, n):
+def rt(func, *argc): # running time
     start = time.clock()
-    func(n)
+    func(*argc)
     end = time.clock()
     print '%s method need last %f seconds' %(func.__name__, end-start)
