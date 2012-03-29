@@ -1,5 +1,5 @@
 from math import log, floor, sqrt
-import time
+import benchmark
 
 def fib1(n): # recursive version, slow
     if n < 2:
@@ -62,15 +62,9 @@ def fib5(n): # tail recursive version
     else:
         return fib_tail(end, 1, 1, 3)
     
-def benchmark(func, n):
-    start = time.clock()
-    print func(n)
-    end = time.clock()
-    print '%s method need last %f seconds' %(func.__name__, end-start)
-
 if __name__ == '__main__':
-    benchmark(fib1, 20)
-    benchmark(fib2, 100)
-    benchmark(fib3, 100)
-    benchmark(fib4, 1000)
-    benchmark(fib4, 1000)
+    benchmark.rt(fib1, 20)
+    benchmark.rt(fib2, 100)
+    benchmark.rt(fib3, 100)
+    benchmark.rt(fib4, 1000)
+    benchmark.rt(fib4, 1000)
