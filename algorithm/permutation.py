@@ -17,9 +17,7 @@ def perm2(lst, n):
 
 
 if __name__ == '__main__':
-    lst = [1,2,0,3]
-    for p in perm2(lst, 2):
-        print p
+    lst = [0,1,2,3,4,5,6,7,8,9]
 
     benchmark.rt(perm1 , lst, len(lst))
     benchmark.rt(perm2 , lst, len(lst))
