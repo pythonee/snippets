@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def countCoinChange_1(cointypes, money):
 
     if(money == 0):
@@ -8,6 +10,10 @@ def countCoinChange_1(cointypes, money):
 
     return countCoinChange_1(cointypes[1:], money) + \
             countCoinChange_1(cointypes, money-cointypes[0])
+
+# 想用母函数解决
+def countCoinChange_2(cointypes, money):
+    pass
 
 
 def countMinCoinChange(cointypes, money):
@@ -48,8 +54,8 @@ def trackprint(lastcoin, money, coins=[]):
         return trackprint(lastcoin, money-lastcoin[money], coins)
         
 if __name__ == '__main__':
-    #cointypes = [ 50, 10, 1, 5, 25 ]
-    #print countCoinChange_1(cointypes, 100)
+    cointypes = [ 50, 10, 1, 5, 25 ]
+    print countCoinChange_1(cointypes, 100)
     
     cointypes = [25, 20, 10, 5, 2]
     countMinCoinChange(cointypes, 0)
