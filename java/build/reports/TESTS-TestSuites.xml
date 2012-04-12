@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="Think" id="0" name="ReverseTest" package="string" tests="1" time="0.181" timestamp="2012-04-11T01:22:18">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="lib.dir" value="lib" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+
+          <property name="os.name" value="Windows 7" />
+
+          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_03\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_03\jre\classes" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="E:\apache-ant" />
+
+          <property name="java.runtime.version" value="1.7.0_03-b05" />
+
+          <property name="user.name" value="pythonee" />
+
+          <property name="build.dir" value="build" />
+
+          <property name="user.language" value="zh" />
+
+          <property name="ant.file.java" value="C:\Users\pythonee\Desktop\snippets\java\build.xml" />
+
+          <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_03\jre\bin" />
+
+          <property name="ant.project.default-target" value="main" />
+
+          <property name="ant.file.type.java" value="file" />
+
+          <property name="ant.project.name" value="java" />
+
+          <property name="java.version" value="1.7.0_03" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="32" />
+
+          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_03\jre\lib\endorsed" />
+
+          <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+
+          <property name="sun.jnu.encoding" value="GBK" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="classes.dir" value="build/classes" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="user.country" value="CN" />
+
+          <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_03\jre" />
+
+          <property name="dist.dir" value="build/dist" />
+
+          <property name="java.vm.info" value="mixed mode, sharing" />
+
+          <property name="main-class" value="Run" />
+
+          <property name="ant.file" value="C:\Users\pythonee\Desktop\snippets\java\build.xml" />
+
+          <property name="os.version" value="6.1" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.version" value="22.1-b02" />
+
+          <property name="report.dir" value="build/reports" />
+
+          <property name="user.variant" value="" />
+
+          <property name="ant.library.dir" value="E:\apache-ant\lib" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="user.script" value="" />
+
+          <property name="user.home" value="C:\Users\pythonee" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="test.dir" value="test" />
+
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_03\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Lenovo\Access Connections\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;E:\CTEX\UserData\miktex\bin;E:\CTEX\MiKTeX\miktex\bin;E:\CTEX\CTeX\ctex\bin;E:\CTEX\CTeX\cct\bin;E:\CTEX\CTeX\ty\bin;E:\CTEX\Ghostscript\gs9.04\bin;E:\CTEX\GSview\gsview;E:\CTEX\WinEdt;E:\TortoiseSVN\bin;E:\TortoiseGit\bin;E:\apache-ant\bin;E:\CTEX\MiKTeX\miktex\bin;E:\google_appengine\;." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner string.ReverseTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\pythonee\Desktop\snippets\java\build\reports\TEST-string.ReverseTest.xml crashfile=C:\Users\pythonee\Desktop\snippets\java\junitvmwatcher6151820556395459535.properties propsfile=C:\Users\pythonee\Desktop\snippets\java\junit7258681585948121558.properties" />
+
+          <property name="java.class.path" value="C:\Users\pythonee\Desktop\snippets\java\lib\junit-4.10.jar;C:\Users\pythonee\Desktop\snippets\java\build\dist\java.jar;E:\apache-ant\lib\ant-launcher.jar;E:\apache-ant\lib\ant.jar;E:\apache-ant\lib\ant-junit.jar;E:\apache-ant\lib\ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.8.3 compiled on February 26 2012" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="Service Pack 1" />
+
+          <property name="java.io.tmpdir" value="C:\Users\pythonee\AppData\Local\Temp\" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+
+          <property name="user.dir" value="C:\Users\pythonee\Desktop\snippets\java" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+
+          <property name="basedir" value="C:\Users\pythonee\Desktop\snippets\java" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="ant.core.lib" value="E:\apache-ant\lib\ant.jar" />
+
+          <property name="file.encoding" value="GBK" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="src.dir" value="src" />
+
+          <property name="ant.project.invoked-targets" value="main" />
+
+      </properties>
+
+      <testcase classname="string.ReverseTest" name="testReverse" time="0.001" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>

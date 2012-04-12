@@ -1,0 +1,73 @@
+<project name="java" basedir="." default="main">
+
+    <property name="src.dir"      value="src"/>
+    <property name="test.dir"     value="test"/>
+    <property name="lib.dir"      value="lib"/>
+    <property name="build.dir"    value="build"/>
+    <property name="classes.dir"  value="${build.dir}/classes"/>
+    <property name="dist.dir"     value="${build.dir}/dist"/>
+    <property name="report.dir"   value="${build.dir}/reports"/>
+
+    <property name="main-class"  value="Run"/>
+
+    <path id="classpath">
+        <fileset dir="${lib.dir}" includes="**/*.jar" />
+    </path>
+
+    <path id="application" location="${dist.dir}/${ant.project.name}.jar"/>
+
+    <target name="init">
+        <mkdir dir="${classes.dir}"/>
+        <mkdir dir="${dist.dir}"/>
+        <mkdir dir="${report.dir}" />
+    </target>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir};${test.dir}" destdir="${classes.dir}"
+            includeantruntime="false" classpathref="classpath" debug="true"
+            debuglevel="source,lines,vars" encoding="UTF-8"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <jar destfile="${dist.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="${main-class}"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="test" depends="jar">
+        <junit printsummary="yes" showoutput="yes">
+            <classpath>
+                <path refid="classpath"/>
+                <path refid="application"/>
+            </classpath>
+            <formatter type="xml"/> 
+            <batchtest fork="yes" todir="${report.dir}">
+                <fileset dir="${test.dir}" includes="**/*Test.java"/>
+            </batchtest>
+        </junit>
+        <junitreport todir="${report.dir}">
+            <fileset dir="${report.dir}" includes="TEST-*.xml"/>
+            <report format="frames" todir="${report.dir}"/>
+        </junitreport>
+    </target>
+
+    <target name="run" depends="jar,test">
+        <java fork="true" classname="${main-class}">
+            <classpath>
+                <path refid="classpath"/>
+                <path refid="application"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="build" depends="clean,jar"/>
+    <target name="main" depends="clean,test,run"/>
+
+</project>
+
